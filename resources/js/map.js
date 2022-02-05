@@ -1,3 +1,4 @@
+// funcion para crear mapa con marcadores
 function iniciarMap(){
     var center ={lat:13.705243 ,lng: -89.24231};
 
@@ -15,8 +16,10 @@ function iniciarMap(){
     for (i = 0; i < coords.length; i++) {
       var marker = new google.maps.Marker({
         position: coords[i],
-        map: map
+        map: map,
+        title: "punto  "+ (i +1)
       });
       
     }
 }
+// end funcion mapa marcadores

@@ -1,9 +1,11 @@
 <?php
+  // comprobar si la sesion existe
    session_start();
    if($_SESSION["nombre"] != null ){
 
    }
    else{
+    //  si no exisate la sesion redireccionar al index
        header("Location: ../inde.php");
    }
 ?>
@@ -13,16 +15,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilos -->
+      <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
-    
-
+    <!-- css -->
     <link rel="stylesheet" href="../resources/css/style.css">
-    <title>Document</title>
+    <!-- end estilos -->
+    <title>PRUEBA</title>
 </head>
 <body>
     <div class="container">
+      <!-- menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" 
@@ -46,6 +51,7 @@
               </div>
             </div>
           </nav>
+        <!-- end menu -->
     </div>
     <div class="container">
       <table class="table">
@@ -98,5 +104,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
     crossorigin="anonymous"></script>
-
 </html>

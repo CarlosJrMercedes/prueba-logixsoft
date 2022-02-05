@@ -1,3 +1,6 @@
+
+// para desloguear al pulsar el boton log oout
+
 $(document).on("click","#logOut", function(){
     $.ajax({
         type: "POST",
@@ -9,6 +12,10 @@ $(document).on("click","#logOut", function(){
     });
 });
 
+// end funcion log out
+
+
+// inicio de sesion
 $(document).on("click","#log", function(){
     var usu = $("#user").val();
     var pass = $("#pass").val();
@@ -37,7 +44,7 @@ $(document).on("click","#log", function(){
     }
 });
 
-
+// end inicio de sesion
 
 
 

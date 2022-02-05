@@ -1,3 +1,5 @@
+
+/* diseño menu */
 .containerOwnApp {
     box-shadow: 0 0 27px 0 rgba(84, 84, 84, 0.62);
     padding-top: 15px;
@@ -32,6 +34,8 @@
     color: #007C9B;
  }
 
+
+ /* dimensiones mapa */
  #map {
 	height: 500px;
 	width: 100%;
